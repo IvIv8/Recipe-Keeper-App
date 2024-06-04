@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Keeper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe Keeper</h1>
+    </header>
+    <main>
+        <section id="add-recipe">
+            <h2>Add Recipe</h2>
+            <form id="recipe-form">
+                <label for="recipe-name">Recipe Name</label>
+                <textarea id="recipe-name" name="recipe-name" placeholder="Recipe Name" required></textarea>
+                
+                <label for="ingredients">Ingredients</label>
+                <textarea id="ingredients" name="ingredients" placeholder="List ingredients separated by commas" required></textarea>
+                
+                <label for="steps">Steps</label>
+                <textarea id="steps" name="steps" placeholder="Steps for preparation" required></textarea>
+                
+                <label for="recipe-image">Recipe Image URL</label>
+                <textarea type="url" id="recipe-image" name="recipe-image" placeholder="http://example.com/my-dish.jpg" required></textarea> 
+                <button type="submit">Add Recipe</button>
+            </form>
+        </section>
+        
+        <section id="recipe-display">
+            <h2>Your Recipes</h2>
+            <div id="recipes-container"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
